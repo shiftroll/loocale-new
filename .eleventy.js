@@ -7,4 +7,12 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('assets'); // If you have an 'assets' directory
 
   // Other configuration options can be added here
+  return {
+    dir: {
+      // ⚠️ These values are both relative to your input directory.
+      includes: "_includes",
+      layouts: "_layouts"
+    }
+  }
+};
 };
