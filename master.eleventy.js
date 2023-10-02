@@ -1,7 +1,7 @@
 module.exports = function (eleventyConfig) {
   // Specify the directory for layouts (templates)
   eleventyConfig.setTemplateFormats(['html', 'njk', 'md']); // Add other formats you use
-  eleventyConfig.addLayoutAlias('default', '_layouts/default.njk');
+  eleventyConfig.addLayoutAlias('base', '_layouts/default.njk');
 
   // Specify the directory for includes (partials)
   eleventyConfig.addPassthroughCopy('assets'); // If you have an 'assets' directory
